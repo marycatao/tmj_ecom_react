@@ -14,7 +14,7 @@ ReactDOM.render(
   <BrowserRouter>
      <Switch>
       <Route path="/" component={Home} exact />
-        <Route path="/produtos" exact={true} component={Galeria} />
+        <Route path="/produtos" exact={true} component={Home} />
         <Route path={'/produtos/:id'} component={ProductPage}/>
         <Route path={'/produto/:id'} component={PutProduct} />
         <Route path={'/quemsomos'} component={QuemSomos} />
