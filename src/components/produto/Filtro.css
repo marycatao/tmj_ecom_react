@@ -1,0 +1,20 @@
+.filtro{
+    background-color: lightgray;
+    width: 180px;
+    display: inline-table;
+    margin-left: 50px;  
+    padding-bottom: 30px;
+    border-radius: 20px;
+}
+.filtro h2{
+    flex: auto;
+    margin-top: 10px;
+    border-bottom: none;
+}
+.filtro input{
+    margin: 10px 0;
+}
+
+.filtro label{
+    margin-left: 10px;
+}

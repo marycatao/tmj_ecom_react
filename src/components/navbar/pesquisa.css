@@ -1,0 +1,42 @@
+.logo1 {
+    width: 30px;
+    height: 30px;
+    color: white;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 15px;
+}
+.pesquisa{
+    vertical-align: top;
+    font-family: Yanone Kaffeesatz,Trebuchet MS,Arial,Helvetica,sans-serif;
+    padding: 6px 0 0 0;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    background: none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom-width: 2px;
+    border-radius: 0;
+    transition: border-bottom-color .1s ease-in-out,flex .7s ease-in-out;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    z-index: 6;
+    margin: .5rem 0;
+    width: 40vw;
+    color: white;
+    text-indent: 15px;
+}
+button {
+    background: none;
+    border: none;
+}
+button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+@media(max-width: 768px){
+    .pesquisa{
+        display: none;
+    }
+}

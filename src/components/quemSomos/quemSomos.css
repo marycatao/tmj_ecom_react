@@ -1,0 +1,82 @@
+h2 {
+    font-size: 2.00rem;
+    text-align: center;
+    font-family: Yanone Kaffeesatz,Trebuchet MS,Arial,Helvetica,sans-serif;
+    display: block;
+}
+.row{
+    display: flex;
+    margin-top: 57px;
+}
+.col-md-4 {
+    text-align: center;
+}
+div {
+    display: block;
+}
+.card-img {
+    width: 300px;
+    height: 300px;
+}
+img {
+    display: inline-block;
+    list-style: none;
+    vertical-align: middle;
+    border-style: none;
+}
+h3{
+    font-size: 1.50rem;
+    font-family: Yanone Kaffeesatz,Trebuchet MS,Arial,Helvetica,sans-serif;
+    color: black;
+    text-align: left;
+}
+.col-md-4 .col-md-8{
+    position: relative;
+    width: 100%;
+}
+
+p {
+    font-family: Yanone Kaffeesatz,Trebuchet MS,Arial,Helvetica,sans-serif;
+    color: black;
+    font-size: 14pt;
+    text-align: left;
+    display: block;
+    margin-top: 0;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    line-height: 1.5
+}
+.card-text{
+    min-width: 768px;
+}
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+    padding-right: 20px;
+    padding-left: 70px;
+}
+.card-title {
+    margin-bottom: .75rem;
+}
+@media (min-width: 768px){
+    .col-md-4 {
+    max-width: 28.333333%;
+    margin: 0 auto;
+    flex: 0 0 33.333333%
+    }
+}
+@media (min-width: 768px){
+    .col-md-8 {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+    }
+}
+@media (max-width: 768px){
+    .col-md-8 {
+        display: inline;
+    }
+}

@@ -1,0 +1,83 @@
+.navbar{
+    background-color: black;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+
+}
+
+.navbar a{
+    color: white;
+}
+
+.navbar ul {
+    padding: 0;   
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    margin-block-start: 0;
+    margin-block-end: 0 ;
+
+}
+.navbar li{
+    padding: 0 15px;
+}
+
+.navbar nav nav{
+    margin-top: 1rem;
+}
+ul li{
+    display: block;
+}
+@media(max-width: 860px){
+    .navbar .burger .lista li {
+        display: none;
+    }
+}
+.navbar .burger .botao {
+    display: none;
+}
+
+@media(min-width: 860px){
+    .navbar .mmobile .botao{
+        display: none;
+    }
+}
+.navbar .mmobile .lista li{
+    display: none;
+}
+
+@media(max-width: 1508px){
+    .navbar .car .texto {
+        display: none;
+    }
+}
+
+@media(max-width: 1268px){
+    .navbar .user .texto {
+        display: none;
+    }
+}
+@media(max-width: 860px){
+    .navbar .user .logo2 {
+        display: none;
+    }
+}
+
+@media(max-width: 808px){
+    .navbar .teste{
+        display: block;
+        padding-left: 15%;
+    }
+}
+
+@media(max-width: 808px){
+    .navbar .teste .pesq1 .pesquisa{
+        width: 40vw;
+        padding-left: 10%;
+    }
+}
+

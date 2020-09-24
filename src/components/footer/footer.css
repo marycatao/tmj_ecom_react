@@ -1,0 +1,59 @@
+
+.footer__social {
+    width: 100%;
+    padding-top: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: center;
+}
+.facebook{
+    margin-right: 10px;
+}
+.instagram{
+    margin-right: 10px;
+}
+.youtube{
+    margin-right: 10px;
+}
+.twitter{
+    margin-right: 10px;
+}
+.spotify{
+    margin-right: 10px;
+}
+.footer__copyright {
+    /* position: absolute; */
+    font-family: Yanone Kaffeesatz,Trebuchet MS,Arial,Helvetica,sans-serif;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin-top: 0;
+}
+.antendimento{
+    margin: 0px;
+}
+.pagamento{
+    font-family: Yanone Kaffeesatz,Trebuchet MS,Arial,Helvetica,sans-serif;
+    color: white;
+    text-align: center;
+}
+.formas{
+    width: 100%;
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+.mastercard{
+    margin-right: 10px;
+}
+.visa{
+    margin-right: 10px;
+}
+.paypal{
+    margin-right: 10px;
+}
+.boleto{
+    margin-right: 10px;
+}
+
