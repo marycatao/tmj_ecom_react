@@ -23,7 +23,7 @@ function PutProduct() {
         api.delete(`/produto/${id}`);
         console.log("Data Deletada")
     }
-    
+       
     useEffect(() => {
         api.get(`/produto/${id}`).then(response => {
             setData(response.data);
@@ -53,25 +53,25 @@ function PutProduct() {
                     <h1  className="editar">Editar Produto</h1>
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <label className="dados" htmlFor='nomeProduto'>Produto: </label>
-                        <input className="balao" id='nomeProduto' placeholder={data.nome}type='text' ref={register()}/><br/>
+                        <input className="balao" id='nomeProduto' name='nome' placeholder={data.nome}type='text' ref={register()}/><br/>
                         <label className="dados" htmlFor='descricao'>Descrição: </label>
-                        <input className="balao" id='descricao' placeholder={data.descricao} type='text' ref={register()}/><br/>
+                        <input className="balao" id='descricao' name='descricao' placeholder={data.descricao} type='text' ref={register()}/><br/>
                         <label className="dados" htmlFor='qtd'>Estoque: </label>
-                        <input className="balao" id='qtd' placeholder={data.qtdEstoque}type='text' ref={register()}/><br/>
+                        <input className="balao" id='qtd' name='qtdEstoque' placeholder={data.qtdEstoque}type='text' ref={register()}/><br/>
                         <label htmlFor='valor' className="dados">Valor: R$ </label>
                         <input className="balao"id='valor' name='valor' placeholder={data.valor}type='text' ref={register()}/><br/>
                         <label className="dados" htmlFor='idCat'> Id Categoria: </label>
-                        <input className="balao" id='idCat' placeholder={data.idCategoria}type='text' ref={register()}/><br/>
+                        <input className="balao" id='idCat' name='idCategoria' placeholder={data.idCategoria}type='text' ref={register()}/><br/>
                         <label className="dados" htmlFor='nomeCat'>Categoria: </label>
-                        <input className="balao" id='nomeCat' placeholder={data.nomeCategoria}type='text' ref={register()}/><br/>
+                        <input className="balao" id='nomeCat' name='nomeCategoria' placeholder={data.nomeCategoria}type='text' ref={register()}/><br/>
                         <label className="dados" htmlFor='idFunc'>Id Funcionario: </label>
-                        <input className="balao" id='idFunc' placeholder={data.idFuncionario}type='text' ref={register()}/><br/>
+                        <input className="balao" id='idFunc' name='idFuncionario' placeholder={data.idFuncionario}type='text' ref={register()}/><br/>
                         <label className="dados" htmlFor='nomeFunc'>Funcionário: </label>
-                        <input className="balao" id='nomeFunc' placeholder={data.nomeFuncionario}type='text' ref={register()}/><br/>
+                        <input className="balao" id='nomeFunc' name='nomeFuncionario' placeholder={data.nomeFuncionario}type='text' ref={register()}/><br/>
                         <label className="dados" htmlFor='dataFab'>Data de Fabricação: </label>
-                        <input className="balao" id='dataFab' placeholder={data.dataFabricacao}type='text' ref={register()}/><br/>
+                        <input className="balao" id='dataFab' name='dataFabricacao' placeholder={data.dataFabricacao}type='text' ref={register()}/><br/>
                         <label className="dados" htmlFor='fotoLink'>Link da Foto: </label>
-                        <input className="balao" id='fotoLink' placeholder={data.fotoLink}type='text' ref={register()}/><br/>
+                        <input className="balao" id='fotoLink' name='fotoLink' placeholder={data.fotoLink}type='text' ref={register()}/><br/>
                     <div className="grupoBotao">
                     <button className="botaoPutOroduct" type='submit'>SALVAR</button>
                     <Link to={`/produtos/${data.id}`}><button className="botaoPutOroduct">CANCELAR</button></Link>

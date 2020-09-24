@@ -18,6 +18,7 @@ ReactDOM.render(
         <Route path={'/produto/:id'} component={PutProduct} />
         <Route path={'/quemsomos'} component={QuemSomos} />
         <Route path={'/novoproduto'} component={NewProduct} />
+        <Route path='*' component={App} />
      </Switch>
    </BrowserRouter>,
   document.getElementById('root')

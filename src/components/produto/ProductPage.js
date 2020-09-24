@@ -16,7 +16,6 @@ function ProductPage() {
         localStorage.setItem("qtd"+posicao, qtd);
         localStorage.setItem("valor"+posicao, valor);
         localStorage.setItem("itensCart", posicao);
-        alert(posicao);
     }
     
     useEffect(() => {

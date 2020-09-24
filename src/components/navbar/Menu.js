@@ -1,6 +1,7 @@
 /* eslint-disable no-unreachable */
 import React from 'react';
 import { FaBars } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import './menu.css'
 
 function Menu() {
@@ -53,6 +54,9 @@ function Menu() {
                 </li> */}
                 <li >
                     <a class="texto6" href="/">QUEM SOMOS</a>
+                </li>
+                <li >
+                    <Link to='/novoproduto' class="texto6" >NOVO PRODUTO</Link>
                 </li>
             </ul>
         </>
