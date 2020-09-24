@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import BoxImg from './BoxImg';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import api from '../../services/api';
 import './ProductPage.css';
 import './PutProduct.css';
@@ -12,9 +12,12 @@ function NewProduct() {
     const [categoria, setCategoria] = useState([]);
     const [funcionario, setFuncionario] = useState([]);
 
+    const history = useHistory();
+
     function onSubmit(dados) {
         console.log("Data submitted: ", dados);
         api.post('/produto', dados);
+        history.push('/');
     };
     useEffect(() => {
         api.get(`/categoria`).then(response => {
@@ -54,7 +57,7 @@ function NewProduct() {
                         <label htmlFor='fotoLink'>Link da Foto: </label>
                         <input type='text' id='fotoLink' name='fotoLink' ref={register()} /><br />
                         <div>
-                            <button to='/' type='submit'>SALVAR</button>
+                            <button type='submit'>SALVAR</button>
                             <Link to={'/'}><button>CANCELAR</button></Link>
                         </div>
                     </form>

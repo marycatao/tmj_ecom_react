@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import BoxImg from './BoxImg';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useParams, useHistory } from 'react-router-dom';
 import api from '../../services/api';
 import './ProductPage.css';
 import './PutProduct.css';
@@ -12,11 +12,13 @@ function PutProduct() {
     const {id} = useParams();
     const [data, setData] = useState([]);
     const {register, handleSubmit, errors} = useForm();
-
+    const history = useHistory();
     
     function onSubmit(dados) {
         console.log("Data submitted: ", dados);
         api.put(`/produto/${id}`, dados);
+        alert('Produto Atualizado!')
+        history.push(`/produto`);
     };
     
     function deleteProduct(){
