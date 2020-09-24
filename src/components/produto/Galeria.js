@@ -12,6 +12,7 @@ function Galeria() {
     const [checked, setChecked] = useState(false);
     const [produtosF, setProdutosF] = useState([]);
     const [filtroCat, setFiltroCat] = useState([]);
+    
     useEffect(() => {
         api.get(`/produto`).then(response => {
             setData(response.data);
