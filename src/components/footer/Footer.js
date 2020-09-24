@@ -14,7 +14,7 @@ import './footer.css';
 import styled from 'styled-components';
 
 const Foo = styled.footer`
-    width: 100%;
+    width: 110%;
     height: 200px;
     margin-top: 80px;
     background-color: black;

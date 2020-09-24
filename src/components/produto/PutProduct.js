@@ -42,46 +42,6 @@ function PutProduct() {
         document.getElementById("fotoLink").value = data.fotoLink;
       });
 
-    // return(
-    //     <div className='p-container'>
-    //                 <div className='produto'>
-    //                     <Link to='/'><FaRegTimesCircle className='iconClose' /></Link>
-    //                     <div className='foto'>
-    //                     <BoxImg link={`http://residencia-ecommerce.us-east-1.elasticbeanstalk.com/produto/${data.id}/foto`}/>
-    //                     </div>
-    //                     <div className='description'>
-    //                         <h1>Editar Produto</h1>
-    //                         <form onSubmit={handleSubmit(onSubmit)}>
-    //                             <label htmlFor='nomeProduto'>Produto:</label>
-    //                             <input id='nomeProduto' name='nome'placeholder={data.nome}type='text' ref={register()}/><br/>
-    //                             <label htmlFor='descricao'>Descrição:</label>
-    //                             <input id='descricao' name='descricao'placeholder={data.descricao} type='text' ref={register()}/><br/>
-    //                             <label htmlFor='qtd'>Estoque:</label>
-    //                             <input id='qtd' name='qtdEstoque' placeholder={data.qtdEstoque}type='text' ref={register()}/><br/>
-    //                             <label htmlFor='valor'>Valor: R$ </label>
-    //                             <input id='valor' name='valor' placeholder={data.valor}type='text' ref={register()}/><br/>
-    //                             <label htmlFor='idCat'> Id Categoria:</label>
-    //                             <input id='idCat' name='idCategoria' placeholder={data.idCategoria}type='text' ref={register()}/><br/>
-    //                             <label htmlFor='nomeCat'>Categoria:</label>
-    //                             <input id='nomeCat' name='nomeCategoria' placeholder={data.nomeCategoria}type='text' ref={register()}/><br/>
-    //                             <label htmlFor='idFunc'>Id Funcionario:</label>
-    //                             <input id='idFunc' name='idFuncionario' placeholder={data.idFuncionario}type='text' ref={register()}/><br/>
-    //                             <label htmlFor='nomeFunc'>Funcionário:</label>
-    //                             <input id='nomeFunc' name='nomeFuncionario'placeholder={data.nomeFuncionario}type='text' ref={register()}/><br/>
-    //                             <label htmlFor='dataFab'>Data de Fabricação:</label>
-    //                             <input id='dataFab' name='dataFabricacao' placeholder={data.dataFabricacao}type='text' ref={register()}/><br/>
-    //                             <label htmlFor='fotoLink'>Link da Foto: </label>
-    //                             <input id='fotoLink' name='fotoLink' placeholder={data.fotoLink}type='text' ref={register()}/><br/>
-    //                         <div>
-    //                         <button type='submit'>SALVAR</button>
-    //                         <Link to={`/produtos/${data.id}`}><button>CANCELAR</button></Link>
-    //                         </div>
-    //                         </form>
-    //                         <Link to='/' onClick={()=>deleteProduct()} className='deletar'>DELETAR PRODUTO</Link>
-    //                     </div>
-    //                 </div>
-    //             </div>
-    //         );
     return(
         <div className='p-container'>
             <div className='produto'>

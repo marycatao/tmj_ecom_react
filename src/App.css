@@ -36,12 +36,7 @@
     transform: rotate(360deg);
   }
 }
-
-.container{
-  display: flex;
-}
-
 h2{
   margin-top: 150px;
-  border-bottom: solid black;
+
 }
